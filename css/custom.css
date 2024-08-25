@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: url('../img/pexels-stywo-1054218.jpg') no-repeat center center;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+   }
+
+   header .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+   }
+
+   header .container {
+    z-index: 2;
+   }
+
+
+#sobre img {
+    border: 5px solid #fff;
+}
+
+#projetos .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+#projetos .card:hover {
+    transform: scale(1.05);
+}
+
+#contato .form-control {
+    margin-bottom: 1rem;
+   }
+   
