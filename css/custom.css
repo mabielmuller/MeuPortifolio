@@ -19,7 +19,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0px 9px 45px -18px rgba(0, 0, 0, 0.534);
+    box-shadow: 0px 9px 45px -18px rgba(0, 0, 0, 0.400);
    }
 
    header .container {
@@ -49,13 +49,13 @@ header {
 }
 
 #projetos .card {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.247);
     transition: transform 0.3s;
 }
 
 #projetos .card:hover {
     transform: scale(1.05);
-    box-shadow: 0px 9px 45px -18px rgba(0, 0, 0, 0.534);
+    box-shadow: 0px 9px 5px 5px rgba(0, 0, 0, 0.295);
 }
 
 #contato .form-control {
