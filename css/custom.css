@@ -5,7 +5,7 @@ body {
 header {
     background: url('../img/pexels-stywo-1054218.jpg') no-repeat center center;
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
