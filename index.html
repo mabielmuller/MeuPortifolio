@@ -9,31 +9,38 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
 
     <!-- Cabeçalho -->
-    <header class=" cabecalho bg-dark text-white text-center py-5">
-        <nav class="navbar navbar-expand-lg navbar-light " style='background-color: #e3f2fd' ; data-mdb-theme="light">
-            <a class="navbar-brand px-3" href="#">Meu Portfólio</a>
+    <header class="cabecalho bg-dark text-white text-center py-5">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;" data-mdb-theme="light">
+            <a class="navbar-brand px-3" href="#" id="navbarBrand">Meu Portfólio</a>
             <button class="navbar-toggler mx-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#sobre" aria-label="Sobre Mim">Sobre Mim</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#tecnologias" aria-label="Projetos">Tecnologias</a>
+                    <li class="nav-item"><a class="nav-link" href="#sobre" aria-label="Sobre Mim" id="sobreLink">Sobre Mim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tecnologias" aria-label="Tecnologias" id="tecnologiasLink">Tecnologias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos" aria-label="Projetos" id="projetosLink">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato" aria-label="Contato" id="contatoLink">Contato</a></li>
+                    <li class="nav-item d-flex align-items-center justify-content-center">
+                        <img class="mx-1" src="img/icons8-brasil-25.png" alt="">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onclick="switchLanguage()">
+                        </div>
+                        <img src="img/icons8-great-britain-25.png" alt="">
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#projetos" aria-label="Projetos">Projetos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contato" aria-label="Contato">Contato</a></li>
                 </ul>
             </div>
         </nav>
         <div class="container">
-            <h1 class="display-4">Bem-vindo ao Meu Portfólio</h1>
-            <p class="lead">Desenvolvedor Full Stack apaixonado por criar soluções incríveis.</p>
+            <h1 id="titulo" class="display-4">Bem-vindo ao Meu Portfólio</h1>
+            <p id="descricao" class="lead">Desenvolvedor Full Stack apaixonado por criar soluções incríveis.</p>
         </div>
     </header>
 
@@ -44,16 +51,16 @@
             <div class="row">
                 <div class="col-md-4">
                     <img src="img/319948241_1402189353860971_3276105110638588237_n.jpg"
-                        class="img-fluid roundedcircle mb-3" alt="Perfil">
+                        class="img-fluid rounded-circle mb-3" alt="Perfil">
                 </div>
                 <div class="sobre-textos col-md-8 ">
-                    <h2>Sobre Mim</h2>
-                    <p>Olá! Meu nome é Mabiel Muller. Sou estudante de Análise e Desenvolvimento de Sistemas pela PUCRS,
+                    <h2 id="sobre-titulo">Sobre Mim</h2>
+                    <p id="sobre-texto1">Olá! Meu nome é Mabiel Muller. Sou estudante de Análise e Desenvolvimento de Sistemas pela PUCRS,
                         nascido e criado em Igrejinha-RS, com um sonho claro: transformar ideias em soluções
                         tecnológicas que impactem positivamente a vida das pessoas. Minha paixão pela tecnologia vai
                         além da curiosidade, é o motor que me leva a buscar, a cada dia, maneiras de aprimorar minhas
                         habilidades e ampliar meu conhecimento.</p>
-                    <p>Desde o momento em que comecei a explorar o mundo do desenvolvimento, percebi que criar soluções
+                    <p id="sobre-texto2">Desde o momento em que comecei a explorar o mundo do desenvolvimento, percebi que criar soluções
                         digitais é como dar vida a ideias. Cada linha de código é uma peça fundamental em um
                         quebra-cabeça que, quando completo, traz à tona a realização de um projeto que antes só existia
                         na imaginação.</p>
@@ -79,15 +86,15 @@
     <!--Tecnologias-->
     <section id="tecnologias" class="py-5">
         <div class="container py-4">
-            <h2 class="text-center mb-4 my-3">Tecnologias</h2>
+            <h2 id="tecnologias-titulo" class="text-center mb-4 my-3">Tecnologias</h2>
             <div class="row">
-                <div class=" tec-box col-md-4">
+                <div class="tec-box col-md-4">
                     <ul class="list-group py-2">
-                        <li class="list-group-item active " aria-current="true">Front-end</li>
+                        <li class="list-group-item active" aria-current="true" id="frontend-titulo">Front-end</li>
                         <li class="list-group-item"> <img src="img/icons8-html5.svg" alt="Html5 Logo"> Html5</li>
                         <li class="list-group-item"> <img src="img/icons8-css.svg" alt="Css3 Logo"> Css3</li>
                         <li class="list-group-item"> <img src="img/icons8-javascript.svg" alt=""> JavaScript</li>
-                        <li class="list-group-item"> <img src="img/icons8-atrevimento.svg" alt=""> Sass</li>
+                        <li class="list-group-item"> <img src="img/icons8-sass.svg" alt=""> Sass</li>
                         <li class="list-group-item"> <img src="img/icons8-bootstrap.svg" alt=""> Bootstrap</li>
                         <li class="list-group-item"> <img src="img/icons8-tailwind-css.svg" alt=""> Tailwind</li>
                         <li class="list-group-item"> <img src="img/icons8-reagir.svg" alt=""> ReactJs</li>
@@ -97,7 +104,7 @@
                 </div>
                 <div class="col-md-4">
                     <ul class="list-group py-2">
-                        <li class="list-group-item active" aria-current="true">Back-end</li>
+                        <li class="list-group-item active" aria-current="true" id="backend-titulo">Back-end</li>
                         <li class="list-group-item"><img src="img/icons8-nó-js.svg" alt=""> NodeJS</li>
                         <li class="list-group-item"><img src="img/icons8-expresso-js.svg" alt=""> Express</li>
                         <li class="list-group-item"><img src="img/icons8-nextjs.svg" alt=""> NextJs</li>
@@ -109,111 +116,153 @@
                 </div>
                 <div class="col-md-4">
                     <ul class="list-group py-2">
-                        <li class="list-group-item active" aria-current="true">Banco de Dados/DevOps</li>
+                        <li class="list-group-item active" aria-current="true" id="devops-titulo">Banco de Dados/DevOps</li>
                         <li class="list-group-item"><img src="img/icons8-mysql.svg" alt=""> MySql</li>
                         <li class="list-group-item"><img src="img/icons8-mongodb.svg" alt=""> MongoDb</li>
                         <li class="list-group-item"> <img src="img/icons8-docker.svg" alt=""> Docker</li>
                     </ul>
                 </div>
-
             </div>
         </div>
     </section>
 
-
     <!-- Projetos -->
     <section id="projetos" class="py-5">
         <div class="container py-5">
-            <h2 class="text-center mb-4">Projetos</h2>
+            <h2 id="projetos-titulo" class="text-center mb-4">Projetos</h2>
             <div class="row">
 
                 <div class="col-md-4">
                     <div class="card mb-4">
                         <div class="d-flex justify-content-center p-3">
-                            <img src="img/icons8-frente-de-loja-100 (1).png" class="card-img-top " alt="Projeto 1">
+                            <img src="img/icons8-frente-de-loja-100 (1).png" class="card-img-top" alt="Projeto 1">
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Ecomerce</h5>
-                            <p class="card-text">Landing page de e-commerce desenvolvida com HTML, CSS e Bootstrap, focada em design responsivo e experiência de usuário otimizada.
-                                <br> <img src="img/icons8-html5.svg" alt=""> <img src="img/icons8-css.svg" alt=""> <img src="img/icons8-bootstrap.svg" alt="">
+                            <h5 class="card-title" id="projeto1-titulo">Ecomerce</h5>
+                            <p class="card-text" id="projeto1-descricao">
+                                Landing page de e-commerce desenvolvida com HTML, CSS e Bootstrap, focada em design responsivo e experiência de usuário otimizada.
                             </p>
-                            <a href="https://github.com/mabielmuller/Ecomerce-Meteora" class="btn btn-primary"> <i class="bi bi-github"></i> Github do projeto</a>
-                            <a href="https://ecomerce-meteora.vercel.app" class="btn btn-primary"> <i class="bi bi-globe"></i> Ver Online</a>
+                                <p>
+                                    <img src="img/icons8-html5.svg" alt="">
+                                    <img src="img/icons8-css.svg" alt="">
+                                    <img src="img/icons8-bootstrap.svg" alt="">
+                                </p>
+                                <a href="https://github.com/mabielmuller/Ecomerce-Meteora" class="btn btn-primary github-link">
+                                    <i class="bi bi-github"></i> <span class="link-text">Github do projeto</span>
+                                </a>
+                                <a href="https://ecomerce-meteora.vercel.app" class="btn btn-primary online-link">
+                                    <i class="bi bi-globe"></i> <span class="link-text">Ver Online</span>
+                                </a>
                         </div>
                     </div>
                 </div>
-
+    
                 <div class="col-md-4">
                     <div class="card mb-4">
                         <div class="d-flex justify-content-center p-3">
                             <img src="img/icons8-café-100.png" class="card-img-top" alt="Projeto 2">
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Cafeteria</h5>
-                            <p class="card-text">Landing page de cafeteria criada com HTML, CSS, Bootstrap e JavaScript, destacando interatividade e design elegante.
-                                <br> <img src="img/icons8-html5.svg" alt=""> <img src="img/icons8-css.svg" alt=""> <img src="img/icons8-javascript.svg" alt=""> <img src="img/icons8-bootstrap.svg" alt="">
+                            <h5 class="card-title" id="projeto2-titulo">Cafeteria</h5>
+                            <p class="card-text" id="projeto2-descricao">
+                                Landing page de cafeteria criada com HTML, CSS, Bootstrap e JavaScript, destacando interatividade e design elegante.
                             </p>
-                            <a href="https://github.com/mabielmuller/Cafeteria" class="btn btn-primary"> <i class="bi bi-github"></i> Github do projeto</a>
-                            <a href="https://cafeteria-xi.vercel.app" class="btn btn-primary"> <i class="bi bi-globe"></i> Ver Online</a>
+                            <p>
+                                <img src="img/icons8-html5.svg" alt=""> 
+                                <img src="img/icons8-css.svg" alt=""> 
+                                <img src="img/icons8-javascript.svg" alt=""> 
+                                <img src="img/icons8-bootstrap.svg" alt="">
+                            </p>
+                            <a href="https://github.com/mabielmuller/Cafeteria" class="btn btn-primary github-link">
+                                <i class="bi bi-github"></i> <span class="link-text">Github do projeto</span>
+                            </a>
+                            <a href="https://cafeteria-xi.vercel.app" class="btn btn-primary online-link">
+                                <i class="bi bi-globe"></i> <span class="link-text">Ver Online</span>
+                            </a>
                         </div>
                     </div>
                 </div>
-
+    
                 <div class="col-md-4">
                     <div class="card mb-4">
                         <div class="d-flex justify-content-center p-3">
                             <img src="img/icons8-hambúrguer-100.png" class="card-img-top" alt="Projeto 3">
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Cardapio online</h5>
-                            <p class="card-text">Template de cardápio online já utilizado por restaurantes reais para modernizar suas operações e entregar uma melhor experiencia para o usuario
-                                <br> <img src="img/icons8-html5.svg" alt=""> <img src="img/icons8-css.svg" alt=""> <img src="img/icons8-javascript.svg" alt=""> <img src="img/icons8-tailwind-css.svg" alt="">
+                            <h5 class="card-title" id="projeto3-titulo">Cardápio Online</h5>
+                            <p class="card-text" id="projeto3-descricao">
+                                Template de cardápio online já utilizado por restaurantes reais para modernizar suas operações e entregar uma melhor experiência para o usuário.
                             </p>
-                            <a href="https://github.com/mabielmuller/Mabi-Burguer" class="btn btn-primary"> <i class="bi bi-github"></i> Github do projeto</a>
-                            <a href="https://mabi-burguer.vercel.app" class="btn btn-primary"> <i class="bi bi-globe"></i> Ver Online</a>
+                            <p>
+                                <img src="img/icons8-html5.svg" alt="">
+                                <img src="img/icons8-css.svg" alt="">
+                                <img src="img/icons8-javascript.svg" alt="">
+                                <img src="img/icons8-tailwind-css.svg" alt="">
+                            </p>
+                            <a href="https://github.com/mabielmuller/Mabi-Burguer" class="btn btn-primary github-link">
+                                <i class="bi bi-github"></i> <span class="link-text">Github do projeto</span>
+                            </a>
+                            <a href="https://mabi-burguer.vercel.app" class="btn btn-primary online-link">
+                                <i class="bi bi-globe"></i> <span class="link-text">Ver Online</span>
+                            </a>
                         </div>
                     </div>
                 </div>
-
+    
                 <div class="col-md-4">
                     <div class="card mb-4">
                         <div class="d-flex justify-content-center p-3">
-                            <img src="img/projeto3.jpg" class="card-img-top" alt="Projeto 3">
+                            <img src="img/projeto3.jpg" class="card-img-top" alt="Projeto 4">
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Projeto 3</h5>
-                            <p class="card-text">Descrição breve do Projeto3.</p>
-                            <a href="#" class="btn btn-primary"> <i class="bi bi-github"></i> Github do projeto</a>
+                            <h5 class="card-title" id="projeto4-titulo">Projeto 4</h5>
+                            <p class="card-text" id="projeto4-descricao">Descrição breve do Projeto 4.</p>
+                            <a href="https://github.com/mabielmuller/Ecomerce-Meteora" class="btn btn-primary github-link">
+                                <i class="bi bi-github"></i> <span class="link-text">Github do projeto</span>
+                            </a>
+                            <a href="https://ecomerce-meteora.vercel.app" class="btn btn-primary online-link">
+                                <i class="bi bi-globe"></i> <span class="link-text">Ver Online</span>
+                            </a>
                         </div>
                     </div>
                 </div>
-
+    
                 <div class="col-md-4">
                     <div class="card mb-4">
                         <div class="d-flex justify-content-center p-3">
-                            <img src="img/projeto3.jpg" class="card-img-top" alt="Projeto 3">
+                            <img src="img/projeto3.jpg" class="card-img-top" alt="Projeto 5">
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Projeto 3</h5>
-                            <p class="card-text">Descrição breve do Projeto3.</p>
-                            <a href="#" class="btn btn-primary"> <i class="bi bi-github"></i> Github do projeto</a>
+                            <h5 class="card-title" id="projeto5-titulo">Projeto 5</h5>
+                            <p class="card-text" id="projeto5-descricao">Descrição breve do Projeto 5.</p>
+                            <a href="https://github.com/mabielmuller/Ecomerce-Meteora" class="btn btn-primary github-link">
+                                <i class="bi bi-github"></i> <span class="link-text">Github do projeto</span>
+                            </a>
+                            <a href="https://ecomerce-meteora.vercel.app" class="btn btn-primary online-link">
+                                <i class="bi bi-globe"></i> <span class="link-text">Ver Online</span>
+                            </a>
                         </div>
                     </div>
                 </div>
-
+    
                 <div class="col-md-4">
                     <div class="card mb-4">
                         <div class="d-flex justify-content-center p-3">
-                            <img src="img/projeto3.jpg" class="card-img-top" alt="Projeto 3">
+                            <img src="img/projeto3.jpg" class="card-img-top" alt="Projeto 6">
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Projeto 3</h5>
-                            <p class="card-text">Descrição breve do Projeto3.</p>
-                            <a href="#" class="btn btn-primary"> <i class="bi bi-github"></i> Github do projeto</a>
+                            <h5 class="card-title" id="projeto6-titulo">Projeto 6</h5>
+                            <p class="card-text" id="projeto6-descricao">Descrição breve do Projeto 6.</p>
+                            <a href="https://github.com/mabielmuller/Ecomerce-Meteora" class="btn btn-primary github-link">
+                                <i class="bi bi-github"></i> <span class="link-text">Github do projeto</span>
+                            </a>
+                            <a href="https://ecomerce-meteora.vercel.app" class="btn btn-primary online-link">
+                                <i class="bi bi-globe"></i> <span class="link-text">Ver Online</span>
+                            </a>
                         </div>
                     </div>
                 </div>
-
+    
             </div>
         </div>
     </section>
@@ -223,35 +272,36 @@
     <!-- Contato -->
     <section id="contato" class="py-5 bg-light">
         <div class="container">
-            <h3 class="text-center">Entre em contato</h3><br />
-
+            <h3 class="text-center" id="contato-titulo">Entre em contato</h3><br />
+    
             <div class="row">
                 <div class="col-md-8">
                     <form action="https://formsubmit.co/mabielmuller9@gmail.com" method="POST">
-                        <input class="form-control" name="name" placeholder="Seu nome..." />
-                        <input class="form-control" name="email" placeholder="Seu e-mail..." />
-                        <textarea class="form-control" name="text" placeholder="Digite o que quer escrever..." style="height:150px;"></textarea>
-                        <input class="btn btn-primary mb-2" type="submit" value="Enviar para meu e-mail"/>
+                        <input class="form-control" name="name" placeholder="Seu nome..." id="input-nome" required />
+                        <input class="form-control" name="email" placeholder="Seu e-mail..." id="input-email" required />
+                        <textarea class="form-control" name="text" placeholder="Digite sua mensagem..."
+                            style="height:150px;" id="input-mensagem" required></textarea>
+                        <input class="btn btn-primary mb-2" type="submit" value="Enviar para meu e-mail" id="botao-enviar" />
+                    </form>
                 </div>
                 <div class="col-md-4">
-                    <b>Meu contato:</b> <br />
-                    Celular: +55 51989255123 <br />
-                    E-mail: mabielmuller9@gmail.com <br />
-                    <a href="https://wa.me/5551989255123" class="btn btn-primary mt-2">Fale comigo pelo whatssap!</a>
-                    
+                    <b id="contato-info">Meu Contato:</b> <br />
+                    <span id="contato-celular">Celular: +55 51989255123</span> <br />
+                    <span id="contato-email">E-mail: mabielmuller9@gmail.com</span> <br />
+                    <a href="https://wa.me/5551989255123" class="btn btn-primary mt-2" id="whatsapp-link">Fale comigo pelo WhatsApp!</a>
                 </div>
             </div>
-
         </div>
     </section>
 
 
     <!-- Rodapé -->
     <footer class="bg-dark text-white text-center py-4">
-        <p>&copy; 2023 Meu Portfólio</p>
+        <p id="footer-texto">&copy; 2023 Meu Portfólio</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
