@@ -42,7 +42,7 @@ function switchLanguage() {
         botaoEnviar: "Enviar para meu e-mail",
         footerTexto: "&copy; 2023 Meu Portfólio",
           githubTexto: "Github do projeto",
-        verOnlineTexto: "Ver Online"
+        verOnlineTexto: "Ver online"
     };
 
     // Conteúdos em inglês
@@ -86,7 +86,7 @@ function switchLanguage() {
             botaoEnviar: "Send to my email",
             footerTexto: "&copy; 2023 My Portfolio",
             githubTexto: "Project on GitHub",
-            verOnlineTexto: "View Online"
+            verOnlineTexto: "See online"
     };
 
     // Altera o conteúdo da página baseado no estado do switch
