@@ -85,7 +85,7 @@ function switchLanguage() {
             placeholderMensagem: "Enter your message...",
             botaoEnviar: "Send to my email",
             footerTexto: "&copy; 2023 My Portfolio",
-            githubTexto: "Github of the project",
+            githubTexto: "Project on GitHub",
             verOnlineTexto: "View Online"
     };
 
